@@ -6,12 +6,12 @@ import FloatingIcons from '../components/FloatingIcons';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-900 flex overflow-hidden">
+    <div className="min-h-screen bg-gray-800 flex overflow-hidden">
       <Sidebar />
       <div className="flex-1 relative">
         <MainDashboard />
-        <FloatingIcons />
       </div>
+      <FloatingIcons />
     </div>
   );
 };
