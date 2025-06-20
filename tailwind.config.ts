@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -84,11 +85,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'ping': {
+					'75%, 100%': {
+						transform: 'scale(2)',
+						opacity: '0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'ping': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite'
+			},
+			animationDelay: {
+				'200': '200ms',
+				'400': '400ms'
 			}
 		}
 	},
